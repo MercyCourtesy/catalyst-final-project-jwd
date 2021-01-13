@@ -1,0 +1,45 @@
+h1 {
+    font-family: Helvetica;
+}
+
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+    
+}
+
+input,
+label {
+    margin: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    margin: 0px;
+    width: 50%;
+}
+
+.buttom {
+    background-color: blue;
+    border: blue;
+}
+
+/* ----to center -- */
+/*.container {
+    display: flex;
+    justify-content:center;
+}
+/* ----to center -- */
+
+.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.new {
+    display: flex;
+    justify-content:left;
+}
