@@ -3,45 +3,53 @@
   <head>
     <title>Task List Group 8</title>
     <link rel="stylesheet" type="text/css" href=".\css\style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    
+
 </head>
 <body>
-<div class="open">
-    <div class="new">
-    <h1>Task List</h1>
+    <div class="navbar">
+        <div class="search-bar">
+        </div>
+        <h1>Amazing Task List - Group 8</h1>
     </div>
-    <div class="new"><div class="new">
-    <h2>Add New Task</h2>
+
+<div class="container-1">
+
+    <div class="open">
+        <div class="new">
+        <h1>Task List</h1>
+        </div>
+        <div class="new"><div class="new">
+        <h2>Add New Task</h2>
+        </div>
     </div>
-</div>
-<div class="container">
     <form action="/action_page.php" method="get">
+        <label for="fname">Name</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="description">Description </label><br>
+        <input type="text" id="description" name="description"><br><br>
+    <div class="row">
+        <div>
+            <label for="assigned">Assigned To </label>
+            <input type="text" id="assigned" name="assigned">   
+        </div>
+        <div>
+            <label for="due-date">Due Date </label>
+            <input type="date" id="start" name="task-start"
+            value="01-13-2021"
+            min="01-01-2021" max="12-31-2021"> 
+        </div>
+    </div><br>
 
-    <label for="fname">Name</label>
-
-    <input type="text" id="fname" name="fname"><br><br>
-
-    <label for="description">Description </label>
-
-    <input type="text" id="description" name="description"><br><br>
-
-    
-<div class="row">
-    <div class="col-6">
-        <label for="assigned">Assigned To </label>
-        <input type="text" id="assigned" name="assigned">   
+    <div class="buttom" role="alert">
+        <Button class="btn btn-primary btn-lg btn-block" variant="primary">Add Task</Button>
     </div>
-    <div class="col-6">
-        <label for="due-date">Due Date </label>
-        <input type="date" id="start" name="task-start"
-        value="01-13-2021"
-        min="01-01-2021" max="12-31-2021"> 
-    </div>
-</div>
-
-<button class="buttom">Add Task</button></h6>    
-<h3>Tasks</h3>     
+    <h3>Tasks</h3>     
     </form>
 </div>
-               
 </body>
 </html>
